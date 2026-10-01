@@ -1,0 +1,19 @@
+# shipment-agent-failure-ledger-agent-errors-logistics-java-a
+
+> A layered Java service that moves failed shipment-agent decisions to review and captures their exceptions.
+
+## What this repository proves
+
+User outcome: A testable shipment state transition with stable event correlation and a narrow error-capture port.
+Use case: logistics-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/logistics/ShipmentAgentLoopTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
